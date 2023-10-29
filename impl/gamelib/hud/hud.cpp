@@ -15,13 +15,13 @@ void Hud::doCreate()
     m_scoreP1Text->setTextAlign(jt::Text::TextAlign::LEFT);
     m_scoreP1Text->setPosition({ 10, 4 });
 
-    m_scoreP1Display = std::make_shared<ScoreDisplay>(m_scoreP1Text, "P1 Score: ");
+    m_scoreP1Display = std::make_shared<ScoreDisplay>(m_scoreP1Text, "Cows Beamed: ");
 
     m_scoreP2Text = jt::dh::createText(renderTarget(), "", 16, jt::Color { 248, 249, 254 });
     m_scoreP2Text->setTextAlign(jt::Text::TextAlign::LEFT);
     m_scoreP2Text->setPosition({ 600 / 2 - 10, 4 });
 
-    m_scoreP2Display = std::make_shared<ScoreDisplay>(m_scoreP2Text, "P2 Score: ");
+    m_scoreP2Display = std::make_shared<ScoreDisplay>(m_scoreP2Text, "Time Remaining: ");
 }
 
 void Hud::doUpdate(float const elapsed)
