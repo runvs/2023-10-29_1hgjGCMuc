@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.26)
-set(PROJECTNAME "JamTemplate")
+set(PROJECTNAME "1hgjGCMuc")
 project(${PROJECTNAME})
 
 ## Helper Functions
@@ -61,7 +61,6 @@ else ()
 endif ()
 
 add_subdirectory(impl)
-add_subdirectory(test)
 
 ## copy .clang-format to build directory
 #####################################################
